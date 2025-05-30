@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vélez Fans</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background-color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #0047ab;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #003b8b;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px 15px;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0047ab;
+    }
+
+    p {
+      line-height: 1.6;
+      text-align: justify;
+      font-size: 18px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .gallery-item {
+      text-align: center;
+      max-width: 300px;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item h3 {
+      font-size: 18px;
+      color: #0047ab;
+      margin: 10px 0 5px;
+    }
+
+    @media (max-width: 600px) {
+      .gallery-item {
+        width: 90%;
+      }
+    }
+
+    /* Estilo para el cuadro de trofeos */
+    .trophies-container {
+      background-color: #0047ab;
+      color: white;
+      padding: 30px;
+      max-width: 800px;
+      margin: 40px auto 60px auto;
+      border-radius: 8px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .trophies-section {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .trophies-section h2 {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .trophies-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    hr.trophies-line {
+      border: none;
+      border-top: 2px solid white;
+      width: 80%;
+      margin: 0 auto 40px auto;
+      border-radius: 2px;
+    }
+
+    svg.trophy {
+      width: 80px;
+      height: 100px;
+      fill: #0047ab;
+      stroke: white;
+      stroke-width: 3;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Vélez Sarsfield
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="libertadores.html">Libertadores</a>
+    <a href="historia.html">Historia</a>
+    <a href="torneos.html">Torneos Locales</a>
+  </nav>
+
+  <main>
+    <h2>Bienvenidos a Vélez Fans</h2>
+    <p>
+      Esta es la página dedicada a todos los fanáticos del Fortín. Acá vas a encontrar información sobre su rica historia, logros en torneos locales e internacionales, y todo lo relacionado con el Club Atlético Vélez Sarsfield.
+    </p>
+
+    <div class="gallery">
+      <div class="gallery-item">
+        <h3>Estadio José Amalfitani</h3>
+        <a href="https://www.google.com/search?q=Estadio+Jos%C3%A9+Amalfitani&tbm=isch" target="_blank">
+          <img src="estadio.jpg" alt="Estadio José Amalfitani" />
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <h3>Campeón Libertadores 1994</h3>
+        <a href="https://www.google.com/search?q=V%C3%A9lez+Libertadores+1994&tbm=isch" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/V%C3%A9lez_Sarsfield_campe%C3%B3n_1994.jpg/640px-V%C3%A9lez_Sarsfield_campe%C3%B3n_1994.jpg" alt="Campeón Libertadores 1994" />
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <h3>Bandera de Vélez</h3>
+        <a href="https://www.google.com/search?q=bandera+de+velez+sarsfield&tbm=isch" target="_blank">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_CAVS.svg/800px-Flag_of_CAVS.svg.png" alt="Bandera de Vélez" />
+        </a>
+      </div>
+    </div>
+
+    <!-- CUADRO TROFEOS -->
+    <div class="trophies-container">
+
+      <div class="trophies-section">
+        <h2>Títulos Nacionales</h2>
+        <div class="trophies-row">
+          <!-- Trofeo 1 -->
+          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 5 L52 20 L52 55 Q52 60 47 60 L17 60 Q12 60 12 55 L12 20 Z" />
+            <rect x="22" y="60" width="20" height="10" />
+          </svg>
+          <!-- Trofeo 2 -->
+          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="35" r="20" />
+            <rect x="20" y="55" width="24" height="10" />
+          </svg>
+        </div>
+      </div>
+
+      <hr class="trophies-line" />
+
+      <div class="trophies-section">
+        <h2>Títulos Internacionales</h2>
+        <div class="trophies-row">
+          <!-- Trofeo 1 -->
+          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="32" cy="35" rx="20" ry="25" />
+            <rect x="22" y="60" width="20" height="10" />
+          </svg>
+          <!-- Trofeo 2 -->
+          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 20 L44 20 L32 50 Z" />
+            <rect x="22" y="60" width="20" height="10" />
+          </svg>
+        </div>
+      </div>
+
+    </div>
+    <!-- FIN CUADRO TROFEOS -->
+
+  </main>
+</body>
+</html>
