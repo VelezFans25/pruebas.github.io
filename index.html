@@ -1,227 +1,190 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vélez Fans</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca de Códigos Web</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      background-color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      background: #f9f9f9;
+      color: #333;
     }
-
     header {
-      background-color: #0047ab;
+      background: #0a0a23;
       color: white;
-      padding: 10px 20px;
+      padding: 20px;
       text-align: center;
-      font-size: 28px;
-      font-weight: bold;
     }
-
+    h1 {
+      margin: 0;
+    }
     nav {
-      background-color: #003b8b;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px 0;
+      background: #1c1c3c;
+      padding: 10px;
     }
-
     nav a {
       color: white;
+      margin-right: 15px;
       text-decoration: none;
-      margin: 8px 15px;
-      font-weight: bold;
-      font-size: 16px;
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
+    section {
       padding: 20px;
       max-width: 1000px;
       margin: auto;
     }
-
-    h2 {
-      color: #0047ab;
+    .category {
+      margin-bottom: 40px;
     }
-
-    p {
-      line-height: 1.6;
-      text-align: justify;
-      font-size: 18px;
+    .category h2 {
+      border-left: 5px solid #007acc;
+      padding-left: 10px;
+      margin-top: 40px;
     }
-
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
+    .subcategory {
       margin-top: 20px;
     }
-
-    .gallery-item {
-      text-align: center;
-      max-width: 300px;
+    ul {
+      padding-left: 20px;
     }
-
-    .gallery-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    }
-
-    .gallery-item h3 {
-      font-size: 18px;
-      color: #0047ab;
-      margin: 10px 0 5px;
-    }
-
-    @media (max-width: 600px) {
-      .gallery-item {
-        width: 90%;
-      }
-    }
-
-    /* Estilo para el cuadro de trofeos */
-    .trophies-container {
-      background-color: #0047ab;
+    footer {
+      background: #0a0a23;
       color: white;
-      padding: 30px;
-      max-width: 800px;
-      margin: 40px auto 60px auto;
-      border-radius: 8px;
-      font-family: Arial, sans-serif;
       text-align: center;
-    }
-
-    .trophies-section {
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .trophies-section h2 {
-      margin-bottom: 20px;
-      font-weight: bold;
-    }
-
-    .trophies-row {
-      display: flex;
-      justify-content: center;
-      gap: 40px;
-      margin-bottom: 30px;
-      flex-wrap: wrap;
-    }
-
-    hr.trophies-line {
-      border: none;
-      border-top: 2px solid white;
-      width: 80%;
-      margin: 0 auto 40px auto;
-      border-radius: 2px;
-    }
-
-    svg.trophy {
-      width: 80px;
-      height: 100px;
-      fill: #0047ab;
-      stroke: white;
-      stroke-width: 3;
-      border-radius: 5px;
-      flex-shrink: 0;
+      padding: 15px;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
   <header>
-    Vélez Sarsfield
-  </header>
-
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="libertadores.html">Libertadores</a>
-    <a href="historia.html">Historia</a>
-    <a href="torneos.html">Torneos Locales</a>
-  </nav>
-
-  <main>
-    <h2>Bienvenidos a Vélez Fans</h2>
-    <p>
-      Esta es la página dedicada a todos los fanáticos del Fortín. Acá vas a encontrar información sobre su rica historia, logros en torneos locales e internacionales, y todo lo relacionado con el Club Atlético Vélez Sarsfield.
-    </p>
-
-    <div class="gallery">
-      <div class="gallery-item">
-        <h3>Estadio José Amalfitani</h3>
-        <a href="https://www.google.com/search?q=Estadio+Jos%C3%A9+Amalfitani&tbm=isch" target="_blank">
-          <img src="estadio.jpg" alt="Estadio José Amalfitani" />
-        </a>
-      </div>
-
-      <div class="gallery-item">
-        <h3>Campeón Libertadores 1994</h3>
-        <a href="https://www.google.com/search?q=V%C3%A9lez+Libertadores+1994&tbm=isch" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/V%C3%A9lez_Sarsfield_campe%C3%B3n_1994.jpg/640px-V%C3%A9lez_Sarsfield_campe%C3%B3n_1994.jpg" alt="Campeón Libertadores 1994" />
-        </a>
-      </div>
-
-      <div class="gallery-item">
-        <h3>Bandera de Vélez</h3>
-        <a href="https://www.google.com/search?q=bandera+de+velez+sarsfield&tbm=isch" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_CAVS.svg/800px-Flag_of_CAVS.svg.png" alt="Bandera de Vélez" />
-        </a>
-      </div>
+    <h1>📚 Biblioteca de Códigos para Web y App</h1>
+    <p>Más de 1000 fragmentos de código organizados por categoría</p>
+  </header>  <nav>
+    <a href="#html">HTML</a>
+    <a href="#css">CSS</a>
+    <a href="#js">JavaScript</a>
+    <a href="#react">React</a>
+    <a href="#tailwind">Tailwind</a>
+    <a href="#firebase">Firebase</a>
+    <a href="#node">Node</a>
+    <a href="#mongo">MongoDB</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#extras">Extras</a>
+  </nav>  <section id="html" class="category">
+    <h2>1. HTML (150 códigos)</h2>
+    <div class="subcategory">
+      <h3>1.1 Estructura base (10)</h3>
+      <ul>
+        <li>HTML5 básico</li>
+        <li>Layout con divs</li>
+        <li>Header + nav + main + footer</li>
+        <li>Meta tags SEO</li>
+        <li>...</li>
+      </ul>
     </div>
-
-    <!-- CUADRO TROFEOS -->
-    <div class="trophies-container">
-
-      <div class="trophies-section">
-        <h2>Títulos Nacionales</h2>
-        <div class="trophies-row">
-          <!-- Trofeo 1 -->
-          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 5 L52 20 L52 55 Q52 60 47 60 L17 60 Q12 60 12 55 L12 20 Z" />
-            <rect x="22" y="60" width="20" height="10" />
-          </svg>
-          <!-- Trofeo 2 -->
-          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="32" cy="35" r="20" />
-            <rect x="20" y="55" width="24" height="10" />
-          </svg>
-        </div>
-      </div>
-
-      <hr class="trophies-line" />
-
-      <div class="trophies-section">
-        <h2>Títulos Internacionales</h2>
-        <div class="trophies-row">
-          <!-- Trofeo 1 -->
-          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="32" cy="35" rx="20" ry="25" />
-            <rect x="22" y="60" width="20" height="10" />
-          </svg>
-          <!-- Trofeo 2 -->
-          <svg class="trophy" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 20 L44 20 L32 50 Z" />
-            <rect x="22" y="60" width="20" height="10" />
-          </svg>
-        </div>
-      </div>
-
+    <!-- más subcategorías... -->
+  </section>  <section id="css" class="category">
+    <h2>2. CSS (180 códigos)</h2>
+    <div class="subcategory">
+      <h3>2.1 Layouts (30)</h3>
+      <ul>
+        <li>Flexbox responsive</li>
+        <li>Grid de 12 columnas</li>
+        <li>Sticky y fixed navbar</li>
+        <li>...</li>
+      </ul>
     </div>
-    <!-- FIN CUADRO TROFEOS -->
-
-  </main>
+  </section>  <section id="js" class="category">
+    <h2>3. JavaScript (250 códigos)</h2>
+    <div class="subcategory">
+      <h3>3.1 Funciones útiles (50)</h3>
+      <ul>
+        <li>Generador de contraseñas</li>
+        <li>Validador de email</li>
+        <li>Temporizador</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </section>  <section id="react" class="category">
+    <h2>4. React (150 códigos)</h2>
+    <div class="subcategory">
+      <h3>4.1 Hooks esenciales</h3>
+      <ul>
+        <li>useState ejemplo</li>
+        <li>useEffect ejemplo</li>
+        <li>useContext</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </section>  <section id="tailwind" class="category">
+    <h2>5. Tailwind CSS (80 códigos)</h2>
+    <div class="subcategory">
+      <h3>5.1 Componentes (40)</h3>
+      <ul>
+        <li>Botón primario</li>
+        <li>Card con imagen</li>
+        <li>Navbar responsive</li>
+        <li>Modal</li>
+      </ul>
+    </div>
+  </section>  <section id="firebase" class="category">
+    <h2>6. Firebase (70 códigos)</h2>
+    <div class="subcategory">
+      <h3>6.1 Conexión y login</h3>
+      <ul>
+        <li>Setup Firebase</li>
+        <li>Login con Google</li>
+        <li>CRUD con Firestore</li>
+      </ul>
+    </div>
+  </section>  <section id="node" class="category">
+    <h2>7. Node.js + Express (70 códigos)</h2>
+    <div class="subcategory">
+      <h3>7.1 Servidor y rutas</h3>
+      <ul>
+        <li>Servidor básico</li>
+        <li>API REST</li>
+        <li>Middleware de logs</li>
+      </ul>
+    </div>
+  </section>  <section id="mongo" class="category">
+    <h2>8. MongoDB (30 códigos)</h2>
+    <div class="subcategory">
+      <h3>8.1 Operaciones CRUD</h3>
+      <ul>
+        <li>InsertOne</li>
+        <li>Find y sort</li>
+        <li>Update y Delete</li>
+      </ul>
+    </div>
+  </section>  <section id="proyectos" class="category">
+    <h2>9. Proyectos completos (100 códigos)</h2>
+    <div class="subcategory">
+      <h3>9.1 Sitios web funcionales</h3>
+      <ul>
+        <li>Portafolio con React</li>
+        <li>Blog + comentarios</li>
+        <li>Ecommerce simple</li>
+        <li>To-do list</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </section>  <section id="extras" class="category">
+    <h2>10. Extras y utilidades (120 códigos)</h2>
+    <div class="subcategory">
+      <h3>10.1 Snippets útiles</h3>
+      <ul>
+        <li>Regex de email</li>
+        <li>Conversor de fechas</li>
+        <li>Scroll infinito</li>
+        <li>Integración YouTube</li>
+        <li>...</li>
+      </ul>
+    </div>
+  </section>  <footer>
+    Creado por ChatGPT · Biblioteca Web Profesional · 2025
+  </footer>
 </body>
 </html>
